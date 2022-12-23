@@ -1,0 +1,33 @@
+name: PokeboxCommands
+version: '${project.version}'
+main: de.fuchscrafter.pokeboxmc.pokeboxcommands.PokeboxCommands
+api-version: 1.17
+author: FuchsCrafter
+website: www.fuchscrafter.de
+description: Utility commands for the PokeBoxMC server
+commands:
+  discord:
+    description: Discord command for PokeBoxMC
+    usage: /discord [set]
+  spawn:
+    description: Gets you to the spawn
+    usage: /spawn
+  pokeboxplugin:
+    description: Information about the custom PokeBox Plugin
+    usage: /pokeboxplugin
+
+
+permissions:
+  pokeboxmc.discordlink.*:
+    pokeboxmc.discordlink.use: true
+    pokeboxmc.discordlink.set: true
+
+  pokeboxmc.discordlink.use:
+    description: Lets you see the Discord link.
+    default: true
+
+  pokeboxmc.setspawn.use:
+    description: Lets you use /spawn
+    default: true
+
+

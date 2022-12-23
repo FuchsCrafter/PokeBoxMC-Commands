@@ -1,0 +1,8 @@
+PROJECT: PokeBoxMC-Commands
+AUTHOR: FuchsCrafter
+VERSION: 1.1
+
+GROUP-ID: de.fuchscrafter.pokeboxmc
+ARTIFACT-ID: pokebox-commands
+JAVA-VERSION: 1.8
+API-VERSION: 1.17.1-R0.1-SNAPSHOT (group-id=io.papermc.paper) (artifact-id=paper-api) (scope=provided)
