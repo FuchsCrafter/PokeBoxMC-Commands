@@ -15,6 +15,9 @@ commands:
   pokeboxplugin:
     description: Information about the custom PokeBox Plugin
     usage: /pokeboxplugin
+  announce:
+    description: Announces something
+    usage: /announce [message]
 
 
 permissions:
@@ -26,8 +29,16 @@ permissions:
     description: Lets you see the Discord link.
     default: true
 
+  pokeboxmc.discordlink.set:
+    description: Lets you set the Discord link.
+
+
   pokeboxmc.setspawn.use:
     description: Lets you use /spawn
     default: true
+
+  pokeboxmc.announce:
+    description: Lets the user announce something
+
 
 

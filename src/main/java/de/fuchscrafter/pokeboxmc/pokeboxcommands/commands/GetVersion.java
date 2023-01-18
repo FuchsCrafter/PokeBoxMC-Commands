@@ -11,14 +11,13 @@ public class GetVersion implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 
 
-        PokeboxCommands instance = PokeboxCommands.getInstance();
         String prefix = PokeboxCommands.prefix;
 
         if (!(sender instanceof Player)) {
-            sender.sendMessage("Plugin version:" + instance.getConfig().getString("plugin-version"));
+            sender.sendMessage(prefix + ChatColor.RED + "Plugin Version: " + ChatColor.GREEN + PokeboxCommands.version);
 
         } else {
-            sender.sendMessage(prefix + ChatColor.GREEN + "Plugin version:" + instance.getConfig().getString("plugin-version"));
+            sender.sendMessage(prefix + ChatColor.RED + "Plugin Version: " + ChatColor.GREEN + PokeboxCommands.version);
 
         }
 
